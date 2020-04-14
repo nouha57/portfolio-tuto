@@ -1,0 +1,80 @@
+.text-uppercase{
+    text-transform:uppercase;
+}
+
+.title-text{
+    font: normal bold 50px/ 72px var(--ComicNeue);
+}
+
+.btn{
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--ComicNeue);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+
+
+}
+
+
+
+
+
+
+.btn-secondary::after{
+    position: absolute;
+    top: -2px ;left:-2px;
+    bottom:-2px;right:-2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+
+ .btn-secondary{
+     box-shadow: var(--box-shadow);
+     background: var(--gradient-color);
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+ .btn-secondary:hover{
+    background: var(--gradient-color);
+    color:whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+p .para{
+    color: var(--text-color);
+
+}
+
+.font-ComicNeue{
+    font-family: var(--ComicNeue);
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.title-h1{
+    font: normal bold 39px/ 40px var(--ComicNeue);
+}
+
+
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0; right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+}
